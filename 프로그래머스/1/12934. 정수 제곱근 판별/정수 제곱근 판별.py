@@ -1,7 +1,5 @@
 def solution(n):
-    i = 1
-    while i*i <=n:
-        if i*i == n:
-            return (i+1)**2
-        i+=1
+    i = n**(1/2)
+    if i%1 == 0:
+        return (int(i)+1)**2 
     return -1
